@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div>
+    <div class="mainBox">
+
+      <div class="firstDiv">
+    <div >
+        <h1>Budget</h1>
+        <input
+          type="number"
+          id="total-amount"
+          placeholder="Enter Total Amount"
+      
+          />
+        <button class="submit" id="submit-button" onclick="submitButton()">Set Budget</button>
+      </div>
+    </div>
+
+
+
+  <!-- Expenditure -->
+  <div class="user-amount-container">
+    <div >
+    <h3>Expenses</h3>
+    <label for="date" >Due Date</label>
+    <input type="date" name="" id="date" class="width">
+
+    <label for="user-amount">total Amount</label>
+    <input
+      type="number"
+      id="user-amount"
+      placeholder="$"
+      class="width"
+    />
+    <label for="product-title">Category</label>
+    <input
+    type="text"
+    class="product-title width"
+    id="product-title"
+    placeholder="Enter Title of Product"
+    
+  />
+  <label for="Discription">Discription</label>
+    <input
+    type="text"
+    class="product-title width"
+    id="Discription"
+    placeholder=""
+    
+  />
+  <label for="Pdate">Payment Date</label>
+  <input type="date" name="" id="Pdate" class="width">
+
+
+    <button class="submit" id="check-amount" onclick="addMore()">Check Amount</button>
+  </div>
+</div>
+ <!-- Output -->
+ <div class="output">
+    <div>
+      <p>Total Budget</p>
+      <span id="amount">0</span>
+    </div>
+    <div>
+      <p>Expenses</p>
+      <span id="expenditure-value">0</span>
+    </div>
+    <div>
+      <p>Balance</p>
+      <span id="balance-amount">0</span>
+    </div>
+  </div>
+</div>
+
+<div class="l">
+  <h3>Expense List</h3>
+  <div class="output">
+    <span>Dua date</span>
+    <span>Total Amount</span>
+    <span>Category</span>
+    <span>Disscription</span>
+    <span>Payment Date</span>
+  </div>
+  <div class="list-container" id="list">
+    
+    </div>
+</div>
+
+<script src="app.js"></script>
+</div>
+</div>
+
+
+</body>
+</html>
